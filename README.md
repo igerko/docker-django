@@ -174,6 +174,9 @@ $ docker exec -it [container-name] \
 # testing
 docker exec [container-name] \
     python3 /srv/[project-name]/manage.py test
+    
+# custom management command
+$ docker exec -it [container-name] bash -c "cd /srv/django_project && python3 manage.py my_custom_command"
 ```
 
 ## Troubleshooting
